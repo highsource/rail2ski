@@ -1,0 +1,21 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 8
+    mifcode Char (11) ;
+    streckennummer Smallint ;
+    richtung Char (8) ;
+    km_i Integer ;
+    km_l Char (56) ;
+    bezeichnung Char (200) ;
+    art Char (60) ;
+    kuerzel Char (32) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "fa4dfb54-58ba-4338-b010-84bc041415e8"
+"\MapInfo\ParentTableID" = "de408b40-267f-4f2e-b7b0-fd1097bd5cee"
+end_metadata

@@ -1,0 +1,29 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 16
+    mifcode Char (11) ;
+    strecke_nr Smallint ;
+    richtung Char (8) ;
+    laenge Float ;
+    von_km_i Integer ;
+    bis_km_i Integer ;
+    von_km_l Char (56) ;
+    bis_km_l Char (56) ;
+    elektrifizierung Char (160) ;
+    bahnnutzung Char (160) ;
+    geschwindigkeit Char (160) ;
+    strecke_kurzn Char (120) ;
+    gleisanzahl Char (160) ;
+    bahnart Char (160) ;
+    kmspru_typ_anf Char (160) ;
+    kmspru_typ_end Char (160) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "786e0a9a-ad10-4cbe-9b4d-16a1c14bd36f"
+"\MapInfo\ParentTableID" = "f85a17c9-37db-4023-88fa-724197bc7de7"
+end_metadata
