@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "Skigebiete_AT",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Ankogel-Mallnitz", "url": "https:\/\/www.ankogel-ski.at\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 13.186268782393148, 47.013788623982236 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Klippitztörl", "url": "https:\/\/www.klippitz.at\/winter\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 14.69076777845663, 46.943758505896149 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Dreiländereck Bergbahnen\t", "url": "http:\/\/www.3laendereck.at\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 13.714073377726873, 46.541984161634126 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Bad Kleinkirchheim", "url": "https:\/\/www.badkleinkirchheim.com\/de-DE\/winter-geniessen\/skifahren-snowboarden\/skigebiet", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 13.772808577823399, 46.811335088425658 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Gerlitzen", "url": "https:\/\/www.gerlitzen.com\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 13.913711283640673, 46.695351858466921 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Flattnitz", "url": "https:\/\/www.kaernten.at\/kaernten-skigebiete\/flattnitz\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 14.024542548511063, 46.941604189485894 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Großglockner Heiligenblut", "url": "https:\/\/www.heiligenblut.at\/de\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 12.840880180157994, 47.04044727511554 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Goldeck", "url": "https:\/\/sportberg-goldeck.com\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 13.485084014904546, 46.790767854046805 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Katschberg-Aineck", "url": "http:\/\/www.katschi.at\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 13.617083240979566, 47.05823260997731 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Innerkrems-Schönfeld-Karneralm", "url": "https:\/\/innerkrems.at\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 13.747046279012521, 46.971204488370127 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Mölltaler Gletscher", "url": "https:\/\/www.gletscher.co.at\/", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 13.050967002403912, 46.981033841369353 ] } }
+]
+}
