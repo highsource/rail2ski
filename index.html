@@ -40,10 +40,13 @@
 
 
 		/*Deutschland*/
-
+		var v_strecke_de = L.tileLayer('https://api.mapbox.com/styles/v1/orless/cjpfjtsb018kv2rnaq7tu6iux/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoib3JsZXNzIiwiYSI6ImNpaXg4cGt2cTAwMGh2Mm01ZDlqYnk5N28ifQ.EDKxdytV0xTiHyI16K0zsg', {
+			maxZoom: 18
+		}).addTo(map);
+		/*
 		var v_strecke_de = L.layerGroup().addTo(map);
 		custom_railway(v_strecke_de, './Streckennetz/DE/Streckennetz_DE.geojson');
-
+		*/
 
 		var v_ski_de = L.markerClusterGroup();
 		map.addLayer(v_ski_de);
@@ -51,8 +54,11 @@
 
 
 		/*Schweiz*/
-
-
+		/*
+		var v_strecke_ch = L.tileLayer('https://api.mapbox.com/styles/v1/orless/cjpfkb8voecdi2spj9p6i1n7r/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoib3JsZXNzIiwiYSI6ImNpaXg4cGt2cTAwMGh2Mm01ZDlqYnk5N28ifQ.EDKxdytV0xTiHyI16K0zsg', {
+			maxZoom: 18
+		}).addTo(map);
+		*/
 		var v_strecke_ch = L.layerGroup().addTo(map);
 		custom_railway(v_strecke_ch, './Streckennetz/CH/Streckennetz_CH.geojson');
 
@@ -61,9 +67,14 @@
 		custom_ski_cluster(v_ski_ch, './Skigebiete/CH/Skigebiete_CH.geojson');
 
 
-		/*Ã–sterreich*/
+		/*Österreich*/
+		var v_strecke_at = L.tileLayer('https://api.mapbox.com/styles/v1/orless/cjpfk53u56rdk2sob4s9t7707/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoib3JsZXNzIiwiYSI6ImNpaXg4cGt2cTAwMGh2Mm01ZDlqYnk5N28ifQ.EDKxdytV0xTiHyI16K0zsg', {
+			maxZoom: 18
+		}).addTo(map);
+		/*
 		var v_strecke_at = L.layerGroup().addTo(map);
 		custom_railway(v_strecke_at, './Streckennetz/AT/Streckennetz_AT.geojson');
+		*/
 
 		var v_ski_at = L.markerClusterGroup();
 		map.addLayer(v_ski_at);
