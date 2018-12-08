@@ -5,9 +5,11 @@
 		<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
 		<script src="assets/js/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="assets/css/leaflet/1.3.4/leaflet.css"/>
+		<link rel="stylesheet" href="assets/css/leaflet.markercluster/1.4.1/MarkerCluster.css"/>
+		<link rel="stylesheet" href="assets/css/leaflet.markercluster/1.4.1/MarkerCluster.Default.css"/>
 		<script src="assets/js/leaflet/1.3.4/leaflet.js"></script>
 		<script src="assets/js/leaflet.ajax/2.1.0/leaflet.ajax.js"></script>
-
+		<script src="assets/js/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
 		<style>
 		body {
 			padding: 0;
@@ -32,33 +34,45 @@
 			id: 'mapbox.light'
 		}).addTo(map);
 
-		L.geoJson
-			.ajax("./Streckennetz/DE/Streckennetz_DE.geojson", {
-				style: {
-					"color": "#ff7f00",
-					"weight": 5
-				}
+		$.ajax({
+			url: "./Streckennetz/DE/Streckennetz_DE.geojson"
+		}).then(function(streckennetz_de_json) {
+			var lines = typeof streckennetz_de_json == 'string' ? JSON.parse(streckennetz_de_json) : streckennetz_de_json;
+			console.log("Loaded [" + lines.features.length + "] features in Streckennetz_DE.");
+			L.geoJson(lines, {
+				style: function (feature) {
+					return {color: 'black', weight:2, opacity: 1};
+    				}
 			}).addTo(map);
-		L.geoJson
-			.ajax("./Skigebiete/DE/Skigebiete_DE.geojson", {
-				style:
+			L.geoJson(lines, {
+				style: function (feature) {
+					return {color: 'white', weight:1, opacity: 1, dashArray : '3, 3'};
+		    		}
+			}).addTo(map);
+
+		});
+
+		var markers = L.markerClusterGroup();
+
+		map.addLayer(markers);
+
+		$.getJSON("./Skigebiete/DE/Skigebiete_DE.geojson", function(skigebiete_de_json) {
+			var features = (typeof skigebiete_de_json == 'string' ? JSON.parse(skigebiete_de_json) : skigebiete_de_json).features;
+			console.log("Loaded [" + features.length + "] features in Skigebiete_DE.");
+			for (var index = 0; index < features.length; index++)
+			{
+				var feature = features[index];
+				if (feature.geometry)
 				{
-					radius: 8,
-					fillColor: "#ff7800",
-					color: "#000000",
-					weight: 1,
-					opacity: 1,
-					fillOpacity: 0.8
-				},
-				pointToLayer: function (feature, latlng) {
-					console.log(latlng);
-					return L.circleMarker(latlng);
+					var popupText = "<a href=\"" + feature.properties.url + "\" target=\"skigebiet\">" + feature.properties.name + "</a>";
+					var marker = L.marker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], {title: feature.properties.name})
+						.bindPopup(popupText)
+						.bindTooltip(feature.properties.name, {permanent: true, opacity: 0.8}).openTooltip();
+					markers.addLayer(marker);
 				}
-			}).addTo(map);
+			}
+		});
 
 	</script>
-
-
 </body>
-
 </html>
