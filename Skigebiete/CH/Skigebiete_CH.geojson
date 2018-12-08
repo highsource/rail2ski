@@ -113,7 +113,6 @@
 { "type": "Feature", "properties": { "adac-id": null, "name": "Melchsee - Frutt", "url": "http:\/\/www.melchsee-frutt.ch", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 8.269007064040615, 46.774125359223063 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Meiringen - Hasliberg", "url": "http:\/\/www.meiringen-hasliberg.ch", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 8.195229775425334, 46.744944938863362 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Bellwald", "url": "http:\/\/www.bellwald.ch", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 8.159789280829145, 46.42238220654 ] } },
-{ "type": "Feature", "properties": { "adac-id": null, "name": "Aletsch Arena \/ Riederalp - Bettmeralp - Fiesch-Eggishorn", "url": "http:\/\/www.aletscharena.ch", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 8.058251998443307, 46.386528790772964 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Rosswald", "url": "http:\/\/www.rosswald-bahnen.ch", "Wikipedia": 1 }, "geometry": { "type": "Point", "coordinates": [ 8.043664354229573, 46.304789937693585 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Rothwald - Wasenalp am Simplon", "url": "http:\/\/www.rothwald.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 8.036673809549189, 46.279932834946273 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Saas Almagell", "url": "http:\/\/www.saas-almagell.org", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.957715531564857, 46.092310649322407 ] } },
@@ -141,7 +140,6 @@
 { "type": "Feature", "properties": { "adac-id": null, "name": "Torrent-Bahnen Leukerbad", "url": "http:\/\/www.torrent.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.629184506016841, 46.373995132273834 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Oeschinensee - Kandersteg", "url": "http:\/\/www.oeschinensee.ch\/", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.682697529179709, 46.497317386938761 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Kiental", "url": "http:\/\/www.kiental-sesselbahn.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.723776614550938, 46.586017695910279 ] } },
-{ "type": "Feature", "properties": { "adac-id": null, "name": "Aeschi", "url": "http:\/\/www.aeschi-tourismus.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.724483429855774, 46.644926494595921 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Beatenberg - Niederhorn - Hohwald", "url": "http:\/\/www.beatenberg.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.765056085704471, 46.690711115629298 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Eggiwil", "url": "http:\/\/www.skilift-eggiwil.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.782897707084771, 46.893902508686828 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Sigriswil Schwanden", "url": "http:\/\/www.ski-schwanden-sigriswil.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.732156383628885, 46.732753768261297 ] } },
@@ -157,6 +155,7 @@
 { "type": "Feature", "properties": { "adac-id": null, "name": "Gstaad", "url": "http:\/\/www.gstaad.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.285051982786196, 46.463954355023596 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Crans Montana - Aminona", "url": "http:\/\/www.crans-montana.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.467237270985371, 46.308518198691296 ] } },
 { "type": "Feature", "properties": { "adac-id": null, "name": "Anzère", "url": "http:\/\/www.anzere.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.394670292459296, 46.294766185850179 ] } },
-{ "type": "Feature", "properties": { "adac-id": null, "name": "Mont-Noble \/ Nax", "url": "http:\/\/www.naxmontnoble.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.461956194777336, 46.22497254429662 ] } }
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Mont-Noble \/ Nax", "url": "http:\/\/www.naxmontnoble.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.461956194777336, 46.22497254429662 ] } },
+{ "type": "Feature", "properties": { "adac-id": null, "name": "Aletsch Arena", "url": "http:\/\/www.aletscharena.ch", "Wikipedia": 0 }, "geometry": { "type": "Point", "coordinates": [ 8.076072733105169, 46.371838299197996 ] } }
 ]
 }
