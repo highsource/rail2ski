@@ -28,18 +28,22 @@
 			maxZoom: 18,
 			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+			'Imagery ï¿½ <a href="https://www.mapbox.com/">Mapbox</a>',
 			id: 'mapbox.light'
 		}).addTo(map);
 
-		L.geoJson
+
+/*Deutschland*/
+
+		var v_strecke_de = L.geoJson
 			.ajax("./Streckennetz/DE/Streckennetz_DE.geojson", {
 				style: {
 					"color": "#ff7f00",
 					"weight": 5
 				}
 			}).addTo(map);
-		L.geoJson
+
+		 var v_ski_de = L.geoJson
 			.ajax("./Skigebiete/DE/Skigebiete_DE.geojson", {
 				style:
 				{
@@ -55,8 +59,11 @@
 					return L.circleMarker(latlng);
 				}
 			}).addTo(map);
-			
-		L.geoJson
+
+
+		/*Schweiz*/
+
+		var v_ski_ch = L.geoJson
 			.ajax("./Skigebiete/CH/Skigebiete_CH.geojson", {
 				style:
 				{
@@ -72,6 +79,25 @@
 					return L.circleMarker(latlng);
 				}
 			}).addTo(map);
+
+
+			/*Ã–sterreich*/
+
+
+			var baseLayers = {
+
+			};
+
+
+			var overlays = {
+				"Streckennetz DE": v_strecke_de,
+
+			       "Skigebiet DE": v_ski_de,
+			        "Skigebiet CH": v_ski_ch
+			};
+
+			L.control.layers(baseLayers, overlays).addTo(map);
+
 
 	</script>
 
