@@ -38,7 +38,7 @@
 		var v_strecke_de = L.geoJson
 			.ajax("./Streckennetz/DE/Streckennetz_DE.geojson", {
 				style: {
-					"color": "#ff7f00",
+					"color": "#01A9DB",
 					"weight": 5
 				}
 			}).addTo(map);
@@ -63,6 +63,14 @@
 
 		/*Schweiz*/
 
+		var v_strecke_ch = L.geoJson
+			.ajax("./Streckennetz/CH/Streckennetz_CH.geojson", {
+				style: {
+					"color": "#01A9DB",
+					"weight": 5
+				}
+			}).addTo(map);
+
 		var v_ski_ch = L.geoJson
 			.ajax("./Skigebiete/CH/Skigebiete_CH.geojson", {
 				style:
@@ -82,6 +90,30 @@
 
 
 			/*Österreich*/
+			var v_strecke_at = L.geoJson
+				.ajax("./Streckennetz/AT/Streckennetz_AT.geojson", {
+					style: {
+						"color": "#01A9DB",
+						"weight": 5
+					}
+				}).addTo(map);
+
+			var v_ski_at = L.geoJson
+					.ajax("./Skigebiete/AT/Skigebiete_AT.geojson", {
+						style:
+						{
+							radius: 8,
+							fillColor: "#ff7800",
+							color: "#000000",
+							weight: 1,
+							opacity: 1,
+							fillOpacity: 0.8
+						},
+						pointToLayer: function (feature, latlng) {
+							console.log(latlng);
+							return L.circleMarker(latlng);
+						}
+					}).addTo(map);
 
 
 			var baseLayers = {
@@ -91,9 +123,12 @@
 
 			var overlays = {
 				"Streckennetz DE": v_strecke_de,
+				"Streckennetz CH" : v_strecke_ch,
+				"Streckennetz AT" : v_strecke_at,
 
-			       "Skigebiet DE": v_ski_de,
-			        "Skigebiet CH": v_ski_ch
+			   "Skigebiet DE": v_ski_de,
+			   "Skigebiet CH": v_ski_ch,
+				 "Skigebiet AT" : v_ski_at
 			};
 
 			L.control.layers(baseLayers, overlays).addTo(map);
